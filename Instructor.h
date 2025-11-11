@@ -8,8 +8,14 @@ private:
     string department;
     int experienceYears;
 public:
-    Instructor(string department , int experienceYears);
-    void display();
+    Instructor(string department , int experienceYears) {
+        this->department=department;
+        this->experienceYears=experienceYears;
+    }
+    void display() {
+        cout<<"Department:"<<department<<endl;
+        cout<<"Experience"<<experienceYears<<endl;
+    }
 };
 
 
