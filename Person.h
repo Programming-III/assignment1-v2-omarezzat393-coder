@@ -9,8 +9,17 @@ private:
     string name;
     int id;
 public:
-    Person(string name,int id);
-    void display();
+    Person(string name,int id) {
+        this->name=name;
+        this->id=id;
+    }
+    void display() {
+        cout<<name<<endl;
+        cout<<id<< endl;
+    }
+    string getname() {
+        return name;
+    }
 };
 
 #endif
